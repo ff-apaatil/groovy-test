@@ -1,8 +1,16 @@
 package com.ff
 
+import hudson.model.*
+
+def config = new HashMap()
+def bindings = getBinding()
+config.putAll(bindings.getVariables())
+
+def out = config['out']
+
 class SayHello {
 	def sayHello(String name){
-		println " Hello ***************** " + name
+		out.println (" Hello ***************** " + name )
 	}
 
 	def anotherMethod(String name){
