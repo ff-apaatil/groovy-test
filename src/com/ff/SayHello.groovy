@@ -5,7 +5,7 @@ class SayHello {
 		println " Hello ***************** " + name
 	}
 
-	def anotherMethod(){
-		return "------  called anothe method "
+	def anotherMethod(String name){
+		return "------  called anotherMethod with argument as " + name
 	}
 }
